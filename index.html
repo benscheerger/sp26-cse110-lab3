@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Benjamin Scheerger" />
+    <link rel="icon" type="image/png" href="imgs/fav.png">
+    <title>Meeting Notes Example</title>
+  </head>
+  <body>
+    <header>
+      <h1>Meeting Notes</h1>
+      <nav>
+        <a href="#Overview">Jump to Overview</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="Overview">
+        <h2>Meeting Overview</h2>
+        <h3>Topic: Initial Brainstorming</h3>
+        <h3>Date: April 9, 2026</h3>
+
+        <hr>
+
+        <p>Attendance List</p>
+        <ul>
+          <li>Benjamin Scheerger</li>
+          <li>Jane Doe</li>
+          <li>John Smith</li>
+        </ul> 
+        
+        <section id="Agenda">
+          <p>Agenda</p>
+          <ol>
+            <li><b>Project Goals</b></li>
+            <li>Timeline</li>
+            <li>Resource Allocation</li>
+          </ol>
+        </section>
+
+        <section id="Unfinished-Business">
+          <p>Unfinished Business</p>
+          <ol>
+            <li><strong>Finding Sponsors</strong></li>
+            <li><i>Finish Budget</i></li>
+          </ol>   
+        </section>
+        
+        <section id="New-Business">
+          <p>New Business</p>
+          <ol>
+            <li>Team Building Activities</li>
+            <li>Next Meeting Date</li>
+          </ol>
+        </section>
+
+        <section id="Miscellaneous">
+          <p>Miscellaneous</p>
+          <div>
+            <ul>
+              <li>John has a list of potential sponsors that he will be reaching out too. <br> <span>Ben</span> will help with this as well </li>
+              <li><em>Jane was wondering when the next meeting will be?</em></li>
+            </ul>
+          </div>
+        </section>
+
+        <img src="imgs/shockedguy.jpeg" alt="Shocked Guy">
+
+        <h3>Meeting Recordings</h3>
+        <audio controls>
+          <source src="media/audio.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <video width="320" height="240" controls>
+          <source src="media/video.mp4" type="video/mp4">
+        </video>
+
+        <details>
+          <summary>Next Meeting Date</summary>
+          <p>The next meeting date will be sometime in the future.</p>
+        </details>
+        
+        <form>
+          <fieldset>
+            <legend>Example Form</legend>
+            <label for="Radio">Radio Selection:</label><br>
+            <input type="radio" id="Radio" name="email"><br>
+            
+            <label for="check">Checkbox:</label>
+            <input type="checkbox" id="check" value="checkbox" name="checkbox"><br>
+            
+            <label for="text">Text Input:</label>
+            <input type="text" id="text" value="text" name="text"><br>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" value="2026-04-14" name="date"><br>
+
+            <label for="textarea">Comments:</label><br>
+            <textarea id="textarea" name="textarea" rows="4" cols="30"></textarea><br><br>
+
+            <label for="data-input">Choose an option:</label>
+            <input list="datalist" id="data-input" name="data-input">
+            <datalist id="datalist">
+              <option value="datalist example">
+              <option value="UCSD Student">
+            </datalist><br><br>
+
+            <label for="select">Selection:</label>
+            <select id="select" name="select">
+              <option value="Select This">Select This</option>
+            </select><br><br>
+            
+            <button type="submit">This is a button</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Benjamin Scheerger</p>
+    </footer>
+  </body>
+</html>
