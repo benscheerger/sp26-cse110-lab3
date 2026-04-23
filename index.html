@@ -4,11 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="author" content="Benjamin Scheerger" />
     <link rel="icon" type="image/png" href="imgs/fav.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
     <title>Meeting Notes Example</title>
+
+    <style>
+      h1 {
+        text-decoration: underline;
+        color: color-mix(in srgb, blue, white); /* Wider-gamut/Mix example */
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1>Meeting Notes</h1>
+      <h1 style="text-align: center;">Meeting Notes</h1>
       <nav>
         <a href="#Overview">Jump to Overview</a>
       </nav>
@@ -23,7 +36,7 @@
         <hr>
 
         <p>Attendance List</p>
-        <ul>
+        <ul class="flex-container">
           <li>Benjamin Scheerger</li>
           <li>Jane Doe</li>
           <li>John Smith</li>
@@ -80,14 +93,14 @@
           <p>The next meeting date will be sometime in the future.</p>
         </details>
         
-        <form>
+        <form class="grid-container">
           <fieldset>
             <legend>Example Form</legend>
             <label for="Radio">Radio Selection:</label><br>
             <input type="radio" id="Radio" name="email"><br>
             
             <label for="check">Checkbox:</label>
-            <input type="checkbox" id="check" value="checkbox" name="checkbox"><br>
+            <input type="checkbox" id="check" value="checkbox" name="checkbox" checked><br>
             
             <label for="text">Text Input:</label>
             <input type="text" id="text" value="text" name="text"><br>
